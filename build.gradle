@@ -9,6 +9,9 @@ subprojects {
     repositories {
         mavenCentral()
         mavenLocal()
+        flatDir {
+          dirs 'libs'
+      }
     }
 
     dependencies {
@@ -31,7 +34,7 @@ project(':acmeair-services-wxs') {
     dependencies {
         compile project(':acmeair-common')
         compile project(':acmeair-services')
-        compile 'com.ibm.websphere.objectgrid:objectgrid:8.6.0.2'
+        implementation 'wxsclient-wlp_8.6.1.3'
     }
 }
 
