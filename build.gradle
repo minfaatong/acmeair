@@ -34,7 +34,8 @@ project(':acmeair-services-wxs') {
     dependencies {
         compile project(':acmeair-common')
         compile project(':acmeair-services')
-        implementation 'wxsclient-wlp_8.6.1.3'
+        // implementation 'com.ibm.ws.xs.client_1.1'
+        implementation 'com.ibm.websphere.objectgrid:objectgrid:8.6.0.2'
     }
 }
 
